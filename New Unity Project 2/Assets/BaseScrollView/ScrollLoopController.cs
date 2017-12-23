@@ -17,6 +17,7 @@ public class ScrollLoopController : UIBehaviour {
 
     private int visibleCellsRowCount;
     private int visibleCellsTotalCount;
+
     private int preFirstVisibleIndex ;
     private int firstVisibleIndex;
     public IList allData;
@@ -50,6 +51,32 @@ public class ScrollLoopController : UIBehaviour {
             ShowCell(i , true);
         }
     }
+    public int GetvisibleCellsTotalCount()
+    {
+        if (visibleCellsTotalCount == 0)
+        {
+            if (horizontal)
+            {
+                visibleCellsRowCount = Mathf.CeilToInt(scrollRect.viewport.rect.width / CellSize.x);
+
+                numberOfColumns = (int)(scrollRect.viewport.rect.height / CellSize.y);
+                float cellHeight = CellSize.y;
+                CellSize.y = scrollRect.viewport.rect.height / numberOfColumns;
+                cellOffset.y = (CellSize.y - (cellHeight - cellOffset.y * 2)) / 2;
+            }
+            else
+            {
+                visibleCellsRowCount = Mathf.CeilToInt(scrollRect.viewport.rect.height / CellSize.y);
+                numberOfColumns = (int)(scrollRect.viewport.rect.width / CellSize.x);
+                float cellWidth = CellSize.x;
+                CellSize.x = scrollRect.viewport.rect.width / numberOfColumns;
+                //cellOffset.x = (CellSize.x - (cellWidth - cellOffset.x * 2)) / 2;
+            }
+            visibleCellsTotalCount = (visibleCellsRowCount + 1) * numberOfColumns;
+        }
+        return visibleCellsTotalCount;
+
+    }
     void initData() {
         CellSize = initCellSize;
         cellOffset = initCellOffset;
@@ -68,7 +95,6 @@ public class ScrollLoopController : UIBehaviour {
                 //cellOffset.x = (CellSize.x - (cellWidth - cellOffset.x * 2)) / 2;
         }
         visibleCellsTotalCount = (visibleCellsRowCount + 1) * numberOfColumns;
-		print(visibleCellsRowCount+" - "+visibleCellsTotalCount);
     }
 
     protected override void OnRectTransformDimensionsChange() {
@@ -187,6 +213,7 @@ public class ScrollLoopController : UIBehaviour {
 
     void SetCellsPool() {
         int outSideCount = localCellsPool.Count + cellsInUse.Count - visibleCellsTotalCount;
+        print(outSideCount + "outSideCount");
         if(outSideCount > 0) {
             while(outSideCount > 0) {
                 outSideCount--;

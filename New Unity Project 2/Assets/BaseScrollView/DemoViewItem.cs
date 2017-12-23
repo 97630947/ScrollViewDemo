@@ -41,13 +41,11 @@ public class DemoViewItem : ViewItem
     protected override void RefreshChildData(object data)
     {
         Listdata _data = (Listdata)data;
-        Debug.Log(_data.txt);
         m_Text.text = _data.txt; ;
     }
 
     private void OnBtnTextClick(GameObject go)
     {
-        Debug.Log("SendAllViewItem");
         SendAllViewItem();
     }
 }

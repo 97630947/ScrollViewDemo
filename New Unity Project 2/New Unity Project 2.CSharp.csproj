@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -71,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\BaseScrollView\BaseScrollView.cs" />
     <Compile Include="Assets\BaseScrollView\DemoViewItem.cs" />
+    <Compile Include="Assets\BaseScrollView\NewBehaviourScript.cs" />
     <Compile Include="Assets\BaseScrollView\ScrollLoopController.cs" />
     <Compile Include="Assets\BaseScrollView\ViewItem.cs" />
     <Compile Include="Assets\startt.cs" />

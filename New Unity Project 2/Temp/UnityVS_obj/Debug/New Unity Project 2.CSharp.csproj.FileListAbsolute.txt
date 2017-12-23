@@ -1,0 +1,13 @@
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEngine.Networking.dll
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEngine.Networking.xml
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_obj\Debug\New Unity Project 2.CSharp.csprojResolveAssemblyReference.cache
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_obj\Debug\Assembly-CSharp.dll
+C:\Users\dgame\Desktop\scroll demo\New Unity Project 2\Temp\UnityVS_obj\Debug\Assembly-CSharp.pdb

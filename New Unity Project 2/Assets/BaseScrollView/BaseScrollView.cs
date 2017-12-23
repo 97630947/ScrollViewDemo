@@ -133,13 +133,14 @@ public class BaseScrollView : MonoBehaviour
             {
                 ListData[i].RefreshData(objects[i]);
             }
-            else if (GetComponent<ScrollLoopController>() == null || GetComponent<ScrollLoopController>()._go.Count < 5)
+
+            else if (GetComponent<ScrollLoopController>() == null || GetComponent<ScrollLoopController>()._go.Count < GetComponent<ScrollLoopController>().GetvisibleCellsTotalCount())
             {
                 var obj = InstancePrefabs(ViewItem, _grid.transform);
                 if (objectsDataArr != null)
                 {
                     GetComponent<ScrollLoopController>()._go.Add(obj);
-                    if (GetComponent<ScrollLoopController>()._go.Count == 5)
+                    if (GetComponent<ScrollLoopController>()._go.Count == GetComponent<ScrollLoopController>().GetvisibleCellsTotalCount())
                     {
                         GetComponent<ScrollLoopController>().initWithData(objectsDataArr);
                         objectsDataArr = null;
